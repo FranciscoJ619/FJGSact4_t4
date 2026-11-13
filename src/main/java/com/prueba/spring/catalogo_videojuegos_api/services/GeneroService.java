@@ -16,7 +16,6 @@ public class GeneroService {
         this.generoRepository = generoRepository;
     }
 
-    // Buscar un genero por su ID
     public Optional<Genero> buscarPorId(Integer id) {
         return generoRepository.findById(id);
     }

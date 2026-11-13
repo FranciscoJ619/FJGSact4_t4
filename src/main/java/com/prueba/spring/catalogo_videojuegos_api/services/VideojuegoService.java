@@ -18,22 +18,18 @@ public class VideojuegoService {
         this.videojuegoRepository = videojuegoRepository;
     }
 
-    // Obtener todos los videojuegos con paginacion
     public Page<Videojuego> listar(Pageable pageable) {
         return videojuegoRepository.findAll(pageable);
     }
 
-    // Buscar un videojuego por su ID
     public Optional<Videojuego> buscarPorId(Integer id) {
         return videojuegoRepository.findById(id);
     }
 
-    // Registrar o actualizar un videojuego
     public Videojuego guardar(Videojuego videojuego) {
         return videojuegoRepository.save(videojuego);
     }
 
-    // Eliminar un videojuego por su ID
     public void eliminar(Integer id) {
         videojuegoRepository.deleteById(id);
     }

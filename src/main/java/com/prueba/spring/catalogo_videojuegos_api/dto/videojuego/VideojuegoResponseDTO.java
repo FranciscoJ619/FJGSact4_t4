@@ -11,9 +11,7 @@ public class VideojuegoResponseDTO {
     public VideojuegoResponseDTO() {
     }
 
-    public VideojuegoResponseDTO(Integer id, String nombre,
-                                 String desarrollador, Integer generoId,
-                                 String generoNombre) {
+    public VideojuegoResponseDTO(Integer id, String nombre, String desarrollador, Integer generoId, String generoNombre) {
         this.id = id;
         this.nombre = nombre;
         this.desarrollador = desarrollador;
