@@ -1,0 +1,26 @@
+info:
+  name: Crear un videojuego
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:8080/api/videojuegos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Minecraft",
+        "desarrollador": "Mojang Studios",
+        "generoId": 2
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZXhhbXBsZS5jb20iLCJpYXQiOjE3OTQ1MzgzODUsImV4cCI6MTc5NDYyNDc4NX0.o2R6tPjtdfYOSx4eIGb_aQZITuWVofIG-9BW0ax1nmA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

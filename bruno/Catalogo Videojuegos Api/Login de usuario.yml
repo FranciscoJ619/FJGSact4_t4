@@ -12,7 +12,7 @@ http:
       {
           "correo": "prueba@example.com",
           "password": "MiClaveSegura123!"
-      }
+      } 
   auth: inherit
 
 settings:
